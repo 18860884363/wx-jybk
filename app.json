@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/shangchuanPic/shangchuanPic",
+    "pages/wdz/wdz"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "贝尔白化日蚀",
+    "navigationBarTextStyle":"black"
+  }
+}

@@ -1,0 +1,58 @@
+<!--pages/shangchuanPic/shangchuanPic.wxml-->
+<view class='container'>
+  <view class='header'>
+     <view class='h-pic'>
+      <image src='../../assets/img/btn_care.png'></image>
+    </view> 
+    <view class='h-content'>
+      <swiper class="swiper-box" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" vertical="{{isVertical}}" duration="{{duration}}" circular='false' indicator-color='{{indicatorcolor}}' indicator-active-color='{{indicatoractivecolor}}' style='height:115px;'>
+        <swiper-item wx:for="{{listArray}}">
+          <text>{{item.text1}}</text>
+          <text>{{item.text2}}</text>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+
+  <!--微信号  -->
+  <view class='weixinhao'>
+    <view class='wxContent'>
+      <text>微信号 (选填) </text>
+      <view class='wxText'>
+        <input type='number' placeholder='请填写微信号'></input>
+      </view>
+    </view>
+  </view>
+
+  <!--上传图片  -->
+  <view class='shangchuanPic'>
+    <text class='sc-title'>已选{{shangchuan}}图片</text>
+    <view class='shuanchuan' wx:if="{{shangchuanPic == 1 ? true : false}}">
+      <view class='sc-left' bindtap='chooseimage'>
+        <image src='{{tempFilePaths}}' mode='aspectFit'></image>
+      </view>
+      <view class='sc-right'>
+        <view class='scr-top'>
+          <image src='../../assets/img/btn_add_photo_first.png' mode='aspectFit'></image>
+        </view>
+        <view class='scr-bottom'>
+          <image src='../../assets/img/btn_add_photo_first.png' mode='aspectFit'></image>
+        </view>
+      </view>
+    </view>
+    <!--预览图片  -->
+    <view class='previewPic' wx:if="{{shangchuanPic == 2 ? true : false}}">
+      <view class='ppContent'>
+        <image src='{{previewPic}}'></image>
+        <image src='../../assets/img/btn_add_photo_second.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <!--确定发布  -->
+  <view class='qdfb'>
+    <view class='btnqdfb' bindtap='showModal'>
+      确认
+    </view>
+  </view>
+</view>

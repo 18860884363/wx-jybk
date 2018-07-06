@@ -1,0 +1,138 @@
+<view class="container">
+  <!--头部图片  -->
+  <view class='header'>
+    <image src='../../assets/img/wdz_header.jpg'></image>
+  </view>
+
+  <!--图片上传  -->
+  <view class='author'>
+    <view class='author-content'>
+      <view class='ac-left'>
+        <view class="acl-pic">
+          <image src='../../assets/img/wdz-touxiang.jpg' mode='aspectFit'></image>
+        </view>
+        <view class='acl-content'>
+          <view class='acl-info'>
+            <text>图片由小编元元上传:</text>
+            <view class='acl-weixinhao'>
+              <text>geckoplanet</text>
+              <text>关注</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='ac-right'>
+        <image src='{{dianzan}}' mode='aspectFit' bindtap='dianzan'></image>
+        <text>{{zanNum}}赞</text>
+      </view>
+    </view>
+  </view>
+
+  <!--介绍  -->
+  <view class='info'>
+    <view class='info-common'>
+      <view class='bg'>
+        <view class='info-bg'></view>
+      </view>
+      <view class='juli'></view>
+      <view class='it-list'>
+        <text class='biaoqian-title'>贝尔白化日蚀</text>
+      </view>
+    </view>
+    <!-- 第二个 -->
+    <view class='info-common'>
+      <view class='bg'>
+        <view class='info-bg'></view>
+      </view>
+      <view class='juli'></view>
+      <view class='it-list'>
+        <text class='biaoqian-title'>商业名称</text>
+        <text class='juti-content'>雷达 - RADAR</text>
+      </view>
+    </view>
+
+    <!--第三个  -->
+    <view class='info-common'>
+      <view class='bg'>
+        <view class='info-bg'></view>
+      </view>
+      <view class='juli'></view>
+      <view class='it-list'>
+        <text class='biaoqian-title'>基因发现者</text>
+        <text class='juti-content'>Jeff Galewood Sr. & Galewood Jr.@JMG Reptile</text>
+      </view>
+    </view>
+
+    <!--第四个  -->
+     <view class='info-common'>
+      <view class='bg'>
+        <view class='info-bg'></view>
+      </view>
+      <view class='juli'></view>
+      <view class='it-list'>
+        <text class='biaoqian-title'>基因组</text>
+        <text class='juti-content'>隐性基因</text>
+        <text class='juti-content juti-contentTwo'>贝尔白化 - Bell Albino</text>
+      </view>
+    </view>
+
+    <!--第五个  -->
+    <view class='info-common'>
+      <view class='bg'>
+      </view>
+      <view class='juli'></view>
+      <view class='it-list'>
+        <text class='juti-content'>隐性基因</text>
+        <text class='juti-content juti-contentTwo'>日蚀 - Eclipse</text>
+      </view>
+    </view>
+
+    <!--
+    <view class='info-six' wx:if="{{false}}">
+      <text class='bg'></text>
+      <view class='it-list'>
+        <text>标签</text>
+        <text>添加基因标签来帮助优化搜索结果</text>
+        <view class='biaoqian'>
+          <text style='color:#999;font-weight:none;'>土匪</text>
+          <text style='color:#999;font-weight:none;'>土匪</text>
+          <image src='../../assets/img/btn_add.png' mode='aspectFit' bindtap='addContent'></image>
+        </view>
+      </view>
+    </view> -->
+
+
+    <view class='addContent' wx:if="{{show}}">
+      <text class='bg'></text>
+      <view class='addinput'>
+        <input type='text' placeholder='{{tishi}}' bindconfirm="addbiaoqian" />
+      </view>
+    </view>
+  </view>
+  <view class='addFun'>
+    <image src='{{addFun}}' mode='aspectFit' class='add' bindtap='addPic'></image>
+  </view>
+</view>
+
+<!-- 标签  -->
+<view class='bqsh' wx:if="{{biaoqian}}">
+  <text>标签审核已提交</text>
+</view>
+
+<!--虚背景  -->
+<view class='xubg' wx:if="{{xubg}}">
+  <view class='xubg-content'>
+    <view class='xu-pic'>
+      <image src='{{addCancel}}' mode='aspectFit' bindtap='btn_cancel'></image>
+    </view>
+    <view class='xu-pic'>
+      <image src='../../assets/img/albm.png' mode='aspectFit' bindtap='chooseImgalbum'></image>
+      <text>相册</text>
+    </view>
+    <view class='xu-pic' >
+      <image src='../../assets/img/take_photo.png' mode='aspectFit' bindtap='chooseImgcamera'></image>
+      <text>拍照</text>
+    </view>
+  </view>
+
+</view>
