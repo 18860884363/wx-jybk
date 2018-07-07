@@ -8,14 +8,17 @@ Page({
     tempFilePaths:"../../assets/img/btn_add_photo_first.png",
     listArray: [
      {
+        btn_care:"../../assets/img/btn_care.png",
         text1:"上传图片必须为本人拍摄",
         text2:"经后台审核通过后即表示授权同意使用该图片"
      },
      {
+       btn_care: "../../assets/img/btn_care.png",
        text1: "上传格式要求JPG.PNG",
        text2: "单张图片大小不能超过5MB,长度比不能为1:1"
      },
      {
+       btn_care: "../../assets/img/btn_care.png",
        text1:"最多可上传三张图片",
        text2:"图片审核结果以展示为准"
      }

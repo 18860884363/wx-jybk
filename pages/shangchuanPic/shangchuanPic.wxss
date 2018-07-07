@@ -1,5 +1,6 @@
 /* pages/shangchuanPic/shangchuanPic.wxss */
 @import "../common/common.wxss";
+
 .container {
   width: 100%;
   height: 100%;
@@ -15,7 +16,7 @@
   position: relative;
 }
 
-.container .header .h-pic {
+/* .container .header .h-pic {
   width: 10%;
   height: 80px;
   position: absolute;
@@ -29,12 +30,34 @@
 .container .header .h-pic image {
   width: 20px;
   height: 20px;
-}
+} */
 
 .container .header .h-content {
   width: 100%;
   height: 80px;
   line-height: 60px;
+  position: relative;
+}
+
+/* .container .header .h-pic {
+  width: 10%;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.container .header .h-content image {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 36px;
+  margin: auto;
 }
 
 .container .header .h-content text {
@@ -44,6 +67,10 @@
   text-align: center;
   font-size: 12px;
   color: #fff;
+}
+
+.swiper-box {
+  position: relative;
 }
 
 .swiper-box .wx-swiper-dot {
@@ -120,7 +147,8 @@
 
 .container .shuanchuan .sc-left image {
   width: 100%;
-  height: 150px;
+  height: 148px;
+  border: 1px solid #eaebeb;
 }
 
 .container .shuanchuan .sc-right {
@@ -136,7 +164,8 @@
 
 .container .shuanchuan .sc-right .scr-top image {
   width: 100%;
-  height: 70px;
+  height: 67px;
+  border: 2px solid #eaebeb;
 }
 
 .container .shuanchuan .sc-right .scr-bottom {
@@ -147,7 +176,8 @@
 
 .container .shuanchuan .sc-right .scr-bottom image {
   width: 100%;
-  height: 70px;
+  height: 67px;
+  border: 2px solid #eaebeb;
 }
 
 /*确定发布  */
@@ -166,7 +196,7 @@
 .container .qdfb .btnqdfb {
   width: 60%;
   height: 60px;
-  background: #020202;
+  background: #249ce1;
   border-radius: 30px;
   text-align: center;
   line-height: 60px;

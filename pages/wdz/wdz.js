@@ -12,6 +12,7 @@ Page({
     xubg:false,
     dianzan:"../../assets/img/btn_unlike.png",
     zanNum:999,
+    zan:'赞',
     addFun:"../../assets/img/btn_start.png",
     addCancel:"../../assets/img/btn_cancel.png"
   },
@@ -112,10 +113,13 @@ Page({
     var dianzanPic = "../../assets/img/btn_like.png";
     var nodianzanPic = "../../assets/img/btn_unlike.png";
     var zanNum = this.data.zanNum;
+    var zan = "已赞";
+    var nozan = "赞"
     if(on){
       if(this.data.zanNum >= 999){
         this.setData({
           zanNum:999+"+",
+          zan : zan,
           dianzan: dianzanPic,
         })
       }else{
@@ -129,7 +133,8 @@ Page({
       if(this.data.zanNum >= "999+"){
         this.setData({
           dianzan: nodianzanPic,
-          zanNum: 999
+          zanNum: 999,
+          zan : nozan
         });
       }else{
         this.setData({

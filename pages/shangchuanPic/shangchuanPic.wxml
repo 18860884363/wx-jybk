@@ -2,11 +2,12 @@
 <view class='container'>
   <view class='header'>
      <view class='h-pic'>
-      <image src='../../assets/img/btn_care.png'></image>
+      
     </view> 
     <view class='h-content'>
       <swiper class="swiper-box" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" vertical="{{isVertical}}" duration="{{duration}}" circular='false' indicator-color='{{indicatorcolor}}' indicator-active-color='{{indicatoractivecolor}}' style='height:115px;'>
         <swiper-item wx:for="{{listArray}}">
+          <image src='{{item.btn_care}}'></image>
           <text>{{item.text1}}</text>
           <text>{{item.text2}}</text>
         </swiper-item>

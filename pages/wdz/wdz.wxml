@@ -23,7 +23,7 @@
       </view>
       <view class='ac-right'>
         <image src='{{dianzan}}' mode='aspectFit' bindtap='dianzan'></image>
-        <text>{{zanNum}}赞</text>
+        <text>{{zanNum}}{{zan}}</text>
       </view>
     </view>
   </view>
@@ -126,11 +126,11 @@
       <image src='{{addCancel}}' mode='aspectFit' bindtap='btn_cancel'></image>
     </view>
     <view class='xu-pic'>
-      <image src='../../assets/img/albm.png' mode='aspectFit' bindtap='chooseImgalbum'></image>
+      <image src='../../assets/img/albm1.png' mode='aspectFit' bindtap='chooseImgalbum'></image>
       <text>相册</text>
     </view>
     <view class='xu-pic' >
-      <image src='../../assets/img/take_photo.png' mode='aspectFit' bindtap='chooseImgcamera'></image>
+      <image src='../../assets/img/take_photo1.png' mode='aspectFit' bindtap='chooseImgcamera'></image>
       <text>拍照</text>
     </view>
   </view>
